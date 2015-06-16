@@ -5,17 +5,17 @@
 - Erläuterung von Begriffen:  
   - Multitasking
   - Thread  
-  - PrÃ¤emptives / kooperatives Multitasking.  
+  - Präemptives / kooperatives Multitasking.
 - Einteilung der FunktionalitÃ¤ten in ein Schalen- bzw. Schichtenmodell.  
 
 ### Andre
 andre.randel@sectornord.de  
 - ~~Vorstellung eines modernen PC Betriebssystems~~  
-- ErlÃ¤uterung von Begriffen:  
+- Erläuterung von Begriffen:
   - ~~Multitasking~~  
   - Thread  
-  - PrÃ¤emptives / kooperatives Multitasking.  
-- Einteilung der FunktionalitÃ¤ten in ein Schalen- bzw. Schichtenmodell.  
+  - Präemptives / kooperatives Multitasking.
+- Einteilung der Funktionalitäten in ein Schalen- bzw. Schichtenmodell.
 
 ### Janek
 thormaehlen@jungehaie.com  
@@ -24,4 +24,4 @@ thormaehlen@jungehaie.com
   - Multitasking  
   - ~~Thread~~  
   - ~~PrÃ¤emptives / kooperatives Multitasking.~~  
-- ~~Einteilung der FunktionalitÃ¤ten in ein Schalen- bzw. Schichtenmodell.~~  
+- ~~Einteilung der Funktionalitäten in ein Schalen- bzw. Schichtenmodell.~~
