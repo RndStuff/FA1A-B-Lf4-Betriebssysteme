@@ -100,6 +100,40 @@
 			});
 
 		</script>
-
+        <script src="https://raw.githubusercontent.com/ccampbell/mousetrap/master/mousetrap.js"></script>
+        <script>
+            (function() {
+                var themes = [
+                    'css/theme/black.css',
+                    'css/theme/white.css',
+                    'css/theme/league.css',
+                    'css/theme/sky.css',
+                    'css/theme/beige.css',
+                    'css/theme/simple.css',
+                    'css/theme/serif.css',
+                    'css/theme/blood.css',
+                    'css/theme/night.css',
+                    'css/theme/moon.css',
+                    'css/theme/solarized.css',
+                ];
+                var current = -1;
+                Mousetrap.bind('shift+up', function(e, combo) {
+                    if (current >= themes.length) {
+                        current = 0;
+                    } else {
+                        current++;
+                    }
+                    document.getElementById('theme').setAttribute('href', themes[current]);
+                });
+                Mousetrap.bind('shift+down', function(e, combo) {
+                    if (current <= 0) {
+                        current = 0;
+                    } else {
+                        current--;
+                    }
+                    document.getElementById('theme').setAttribute('href', themes[current]);
+                });
+            })();
+        </script>
 	</body>
 </html>
