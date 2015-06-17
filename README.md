@@ -25,3 +25,9 @@ thormaehlen@jungehaie.com
   - ~~Thread~~  
   - ~~PrÃ¤emptives / kooperatives Multitasking.~~  
 - ~~Einteilung der Funktionalitäten in ein Schalen- bzw. Schichtenmodell.~~
+
+## Quellen
+ - http://www.operating-system.org
+ - https://de.wikipedia.org/wiki/Betriebssystem
+ - https://de.wikipedia.org/wiki/Linux
+
