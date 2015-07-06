@@ -5,10 +5,10 @@
 ## Prozess
 Im ersten Moment besteht vorerst gar kein Unterschied zwischen einem Prozess und einem Thread,
 denn letztendlich besteht ein Prozess mindestens aus einem Thread. Ferner endet ein Prozess, wenn sich
-alle Threads beenden. Somit ist der eine Prozess (dieser eine Prozess ist der erste Thread, auch
-»Main Thread« bzw. »Haupt-Thread« genannt) verantwortlich für die gleichzeitige Ausführung mehrerer Threads –
+alle Threads beenden. Somit ist der eine Prozess verantwortlich für die gleichzeitige Ausführung mehrerer Threads –
 da doch Threads auch nur innerhalb eines Prozesses ausgeführt werden. Der gravierende Unterschied zwischen den
 Threads und den Prozessen besteht darin, dass Threads unabhängige Befehlsfolgen innerhalb eines Prozesses sind.
+
 ## Thread / Task
 Ein Thread ist ein Ausführungsstrang in der Abarbeitung eines Computerprogramms.
 Threads teilen sich innerhalb eines Prozesses Prozessoren, den Speicher und andere betriebssystemabhängige Ressourcen
@@ -19,17 +19,16 @@ Teil des Prozesskontextes verwenden.
 
 ## Multitasking
 Der Begriff Multitasking  bzw. Mehrprozessbetrieb bezeichnet die Fähigkeit eines Betriebssystems,
-mehrere Aufgaben (Tasks) nebenläufig auszuführen. Im Allgemeinen bietet der Prozessor hierzu auch
-unterstützende Strukturen. Die verschiedenen Prozesse werden in so kurzen Abständen immer abwechselnd
+mehrere Aufgaben (Tasks) nebenläufig auszuführen. Die verschiedenen Prozesse werden in so kurzen Abständen immer abwechselnd
 aktiviert, dass der Eindruck der Gleichzeitigkeit entsteht. Multitasking ist somit ein Synonym für
 Zeit-Multiplexverfahren. Besitzt ein Computer mehrere CPU-Kerne, so dass er mehrere Aufgaben echt-gleichzeitig
-ausführen kann, so spricht man von Multiprocessing (siehe dort). In modernen Computern werden beide Verfahren
+ausführen kann, so spricht man von Multiprocessing. In modernen Computern werden beide Verfahren
 kombiniert eingesetzt.
 
 ### Präemptives Multitasking
 Basis der heutzutage standardmäßig angewendete Methode ist das präemptive Multitasking.
 Die Abarbeitung der einzelnen Prozesse wird ebenfalls gesteuert durch den Scheduler, ein Bestandteil des
-Betriebssystemkerns (siehe unten). Jeder Prozess wird nach einer bestimmten Abarbeitungszeit unterbrochen.
+Betriebssystemkerns. Jeder Prozess wird nach einer bestimmten Abarbeitungszeit unterbrochen.
 Dabei spricht man auch von so genannten Zeitschlitzen (bzw. Zeitscheiben, engl. time slices). Dann „schläft“
 der Prozess (ist inaktiv) und andere Prozesse werden bearbeitet. Erhält er wieder eine Prozessorzuteilung,
 so setzt er seine Arbeit fort (ist aktiv). Meist wird jedem Prozess eine „absolute“ Zeitscheibe zugewiesen
@@ -70,7 +69,8 @@ verursachen kann.
 
 ## Einteilung der Funktionalitäten in ein Schalen- bzw. Schichtenmodell.
 
-Schicht 5: API (Application Program Interface) Über Softwareschnittstellen wie die Win32 API verwenden Programme
+### Schicht 5:
+API (Application Program Interface) Über Softwareschnittstellen wie die Win32 API verwenden Programme
 für sie freigegebene Betriebssystemfunktionen etwa den Kopieren oder Öffnen Dialog für Dateien. Diese werden über
 einheitliche Anwendungsbefehle mit Parametern allen Programmen einheitlich zur Verfügung gestellt. Beispiel hierfür
 sind auch DFÜ Dienste.
@@ -78,21 +78,25 @@ Bibliotheken Bibliotheken stellen dem Betriebssystem und Anwendungsprogrammen fe
 die den Zugang für verschiedene Funktionen vereinfachen. Durch Bibliotheken (.dll, .OCX, ...) greifen Entwickler
 vereinfacht auf häufig benötigte Funktionen zurück ohne diese selbst für die Anwendung neu erfinden zu müssen.
 
-Schicht 4: Systemschnittstelle (Kernel) Die Systemschnittstelle kapselt den Betriebssystemkern von der API ab,
+### Schicht 4:
+Systemschnittstelle (Kernel) Die Systemschnittstelle kapselt den Betriebssystemkern von der API ab,
 häufig dient sie auch als Trennmarke des CPU Modus vom privilegierten Ring 0 des Kernel.
 
-Schicht 3: Management Die Managementschicht sorgt für den reibungslosen Ablauf der Systemprozesse durch
+### Schicht 3: 
+Management Die Managementschicht sorgt für den reibungslosen Ablauf der Systemprozesse durch
 kooperatives, präemptives oder echtzeit Multitasking. Je nach Priorität teilt das Betriebssystem dem Prozess
 CPU-Zeit, Speicher und I/O-Zugriffe zu.
 
-Schicht 2: Dateisystem, Treiber Wichtige Aufgaben des Betriebssystem sind die Darstellung eines bis mehrerer
+### Schicht 2: 
+Dateisystem, Treiber Wichtige Aufgaben des Betriebssystem sind die Darstellung eines bis mehrerer
 Dateisysteme, die über entsprechende Treiber virtuell realisierbar sind. Zusätzliche Funktionen wie Verschlüsselung
 oder Komprimierung gehören auch dazu. Treiber für Standard Hardware wie Tastatur, LPT oder COM Schnittstellen
 werden rudimentär direkt vom Betriebssystem unterstützt, Beispiel sind DOS Betriebssysteme. Moderne Betriebssysteme
 bringen Standard Treiber für die meisten Hardwarekomponenten gleich mit. Für erweiterte Funktionen und optimale
 Leistung stellen die Hersteller eigene Treiber für ihre Hardware bereit.
 
-Schicht 1: HAL (Hardware Abstraction Layer) Die HAL ermöglicht den Einsatz auf einer Hardwareplattform die
+### Schicht 1:
+HAL (Hardware Abstraction Layer) Die HAL ermöglicht den Einsatz auf einer Hardwareplattform die
 speziell auf eine Prozessor Architektur ausgelegt ist. Dazu gehören etwa die x86, Alpha, PowerPC oder Sparc
 Architektur. Steht die Portierbarkeit des Betriebssystems für andere Plattformen im Vordergrund, spielt die
 HAL eine zentrale Rolle für die Portierbarkeit.

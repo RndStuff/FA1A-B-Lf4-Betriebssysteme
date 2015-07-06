@@ -30,4 +30,6 @@ thormaehlen@jungehaie.com
  - http://www.operating-system.org
  - https://de.wikipedia.org/wiki/Betriebssystem
  - https://de.wikipedia.org/wiki/Linux
-
+ - https://de.wikipedia.org/wiki/Multitasking#Pr.C3.A4emptibles_Multitasking
+ - https://de.wikipedia.org/wiki/Deadlock_(Informatik)
+ - http://www.cs.uni-paderborn.de/fileadmin/Informatik/FG-Szwillus/Lehre/Alte_Veranstaltungen/GP2/GP2-2b.pdf
