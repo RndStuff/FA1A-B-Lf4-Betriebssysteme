@@ -1,7 +1,5 @@
 # Betriebssysteme
 
-## {{Vorstellung eines modernen PC Betriebssystems}}
-
 ## Prozess
 Im ersten Moment besteht vorerst gar kein Unterschied zwischen einem Prozess und einem Thread,
 denn letztendlich besteht ein Prozess mindestens aus einem Thread. Ferner endet ein Prozess, wenn sich
